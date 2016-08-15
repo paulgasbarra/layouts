@@ -1,0 +1,113 @@
+body {
+	color: #666;
+	font-family: Helvetica;
+	padding: 5px;
+}
+
+header{
+	background-color: #CCC;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 2%;
+}
+
+#logo img{
+	width: 100px;
+	height: 100px;
+	background-color: #333;
+}
+
+nav {
+	margin-top: 25px;
+	float: right;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px 10px;
+	border-right: 1px solid #666;
+	text-align: center;
+}
+
+nav ul li:last-child{
+	border-right: none;
+}
+
+nav ul li a{
+	color: #666;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: #333;
+}
+
+.main {
+	width: 100%;
+	height: 300px;
+	background-color: #CCC;
+}
+
+.sub-main {
+	height: 100%;
+	width: 100%;
+}
+
+.sub-main.headline{
+	margin-top:2.5%;
+	margin-bottom: 1%;
+}
+
+.row {
+	height: 150px;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+.wide {
+	float: left;
+	height: 150px;
+	width: 46%;
+	background-color: #CCC;
+}
+.wide img{
+	max-width: 100%;
+}
+
+.narrow {
+	float: left;
+	width: 25%;
+	margin-left: 2%;
+	height: 150px;
+	background-color: #CCC;
+}
+
+/*720px Break Point*/
+@media (max-width: 720px){
+	.wide{
+		width: 100%;
+		margin-bottom: 2%;
+		margin-right: 0;
+	}
+	.narrow{
+		width:49%;
+		margin-left: 0;
+		margin-right:2%;
+		margin-bottom: 2%;
+	}
+	.narrow:last-child{
+		margin-right: 0;
+	}
+
+}
+
+/*320px Break Point*/
+@media (max-width: 320px){
+	.narrow{
+		width:100%;
+		margin-left: 0;
+		margin-right:0;
+	}
+}
+
+
